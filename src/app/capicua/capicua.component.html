@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Verificador de Capicúa</h3>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="numero">Ingrese un número de dos dígitos:</label>
+          <input
+            type="number"
+            id="numero"
+            [(ngModel)]="numero"
+            class="form-control"
+            placeholder="Número"
+          />
+        </div>
+        <button class="btn btn-success mt-3" (click)="verificarCapicua()">Verificar</button>
+  
+        <div class="alert alert-info mt-3" role="alert">
+          {{ mensaje || 'Ingrese un número y haga clic en verificar' }}
+        </div>
+      </div>
+    </div>
+  </div>
+  

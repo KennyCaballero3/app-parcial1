@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Cálculo del Total - Llantería</h3>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="cantidad">Ingrese la cantidad de llantas:</label>
+          <input
+            type="number"
+            id="cantidad"
+            [(ngModel)]="cantidad"
+            class="form-control"
+            placeholder="Cantidad"
+          />
+        </div>
+        <button class="btn btn-success mt-3" (click)="calcularTotal()">Calcular</button>
+  
+        <div class="alert alert-info mt-3" role="alert">
+          {{ total !== null ? 'El total es: $' + total : 'Ingrese la cantidad y haga clic en calcular' }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
